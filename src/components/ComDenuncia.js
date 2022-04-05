@@ -11,7 +11,7 @@ const ComDenuncia = ({navigation}) => {
 
     const getDenuncia = async () => {
         try {
-            const denuncias = await fetch("http://10.0.0.142:3000/denuncia")
+            const denuncias = await fetch("http://localhost:3000/denuncia")
             const json = await denuncias.json()
             setData(json)
 

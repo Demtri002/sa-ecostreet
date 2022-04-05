@@ -27,8 +27,8 @@ export default function Denuncia({ navigation }) {
                         usersid: userLogado.id
                     })
                 }
-                await fetch('http://10.0.0.142:3000/denuncia', requestOptions)
-                const denuncias = await fetch("http://10.0.0.142:3000/denuncia")
+                await fetch('http://localhost:3000/denuncia', requestOptions)
+                const denuncias = await fetch("http://localhost:3000/denuncia")
                 const json = await denuncias.json()
                 setDenuncia(json)
                 

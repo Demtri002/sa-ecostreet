@@ -15,7 +15,7 @@ const Admin = () => {
     
     const getUsers = async () => {
         try{
-            const response = await fetch('http://10.0.0.142:3000/users/')
+            const response = await fetch('http://localhost:3000/users/')
             const json = await response.json()
             setData(json)
             
@@ -34,7 +34,7 @@ const Admin = () => {
     
     const getDenuncia = async () => {
         try{
-            const response = await fetch('http://10.0.0.142:3000/denuncia/')
+            const response = await fetch('http://localhost:3000/denuncia/')
             const json = await response.json()
             setData(json)
         }catch (error) {
@@ -56,7 +56,7 @@ const Admin = () => {
         try{
 
             console.log("ID:" + id)
-            await fetch('http://10.0.0.142:3000/denuncia/' + id, requestOptions)
+            await fetch('http://localhost:3000/denuncia/' + id, requestOptions)
             setData(data.filter(user => user.id != id))
         }catch (error) {
             console.error(error)

@@ -12,7 +12,7 @@ const deleteDenuncia = async (id) => {
     }
 
     try {
-        await fetch('http://10.0.0.142:3000/denuncia/' + id, requestOprions)
+        await fetch('http://localhost:3000/denuncia/' + id, requestOprions)
         setData(data.filter(denuncia => denuncia.id != id))
     } catch (error) {
         console.log('error');

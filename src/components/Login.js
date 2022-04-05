@@ -11,7 +11,7 @@ const Login = ({navigation}) => {
     const { userLogado, setUserLogado } = useUser()
 
     const authUser = async (req, res) => {
-            const dadosUsuario = await fetch("http://10.0.0.142:3000/users")
+            const dadosUsuario = await fetch("http://localhost:3000/users")
             const dadosJson =  await dadosUsuario.json()
 
             dadosJson.map(e =>{

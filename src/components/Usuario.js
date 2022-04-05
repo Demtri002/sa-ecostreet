@@ -11,7 +11,7 @@ const Usuario = ({navigation}) => {
    
     const getUsersByID = async () => {
         try{
-            const response = await fetch('http://10.0.0.142:3000/users/')
+            const response = await fetch('http://localhost:3000/users/')
             const json = await response.json()
             setData(json)
             
@@ -35,7 +35,7 @@ const Usuario = ({navigation}) => {
         try{
 
             console.log("ID:" + id)
-            await fetch('http://10.0.0.142:3000/users/' + id, requestOptions)
+            await fetch('http://localhost:3000/users/' + id, requestOptions)
             setData(data.filter(user => user.id != id))
         }catch (error) {
             console.error(error)

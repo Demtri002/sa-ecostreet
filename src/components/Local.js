@@ -42,7 +42,7 @@ const Local = ({navigation}) => {
                         })
                     }
                     
-                    await fetch('http://10.0.0.142:3000/local_d/', requestOptions)
+                    await fetch('http://localhost:3000/local_d/', requestOptions)
                 } catch (error) {
                     console.log(error.message)
                 } finally {

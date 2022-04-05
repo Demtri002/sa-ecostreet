@@ -35,7 +35,7 @@ const Cadastro = ({ navigation }) => {
                             senha: senha
                         })
                     }
-                    await fetch('http://10.0.0.142:3000/users/', requestOptions)
+                    await fetch('http://localhost:3000/users/', requestOptions)
                 } catch (error) {
                     console.log(error.message)
                 } finally {

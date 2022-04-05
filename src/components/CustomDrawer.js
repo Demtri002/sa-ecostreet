@@ -13,7 +13,7 @@ const CustomDrawer = (props, {navigation}) => {
 
     const getLogin = async () => {
         try{
-            const response = await fetch('http://10.0.0.142:3000/users/')
+            const response = await fetch('http://localhost:3000/users/')
             const json = await response.json()
             setData(json)
         }catch (error) {
